@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quick Chat</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="Kwitter_room.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button id="logout_button" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logOut()">Log Out</button>
+        <center>
+            <h1>QuickChat</h1>
+            <h4 id="user_name" placeholder="User Name"></h4>
+            <label>#Add Room:</label>
+            <input type="text" id="room_name" class="form_control" placeholder="#Room Name">
+            <button onclick="addRoom();" class="btn btn-success">#Add Room</button>
+            <h3>#TRENDING ROOMS</h3>
+            <div id="output"></div>
+        </center>
+    </div>
+</body>
+</html>
